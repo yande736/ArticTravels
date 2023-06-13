@@ -27,6 +27,7 @@ a {
 .navbar {
   position: fixed;
   top: 0;
+  z-index: 10;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -389,3 +390,38 @@ a {
 }
   
 /* footer */
+
+
+
+
+@media screen and (max-width: 695px) {
+  .navbar .logo {
+    font-size: 0.8rem;
+  }
+
+  .navbar .links {
+    flex-direction: column;
+    position: absolute;
+    top: 4.5rem;
+    right: 0;
+    padding: 1.6rem;
+    background-color: blue;
+    width: 100%;
+  } 
+
+  .navbar .links.active {
+    display: none;
+  }
+  
+  .navbar .links li {
+    margin-bottom: 12px;
+  }
+
+  .navbar .links button {
+    margin-top: 1rem;
+  }
+
+  .navbar .toggle-btn {
+    display: block;
+  }
+}
