@@ -19,7 +19,7 @@ a {
 }
 
 :root {
-  --main-color: #30b0b0;
+  --main-color: #7ac7ff;
   --bg-color: #171a31;
   --secondary-bg: #0affff;
 }
@@ -36,14 +36,12 @@ a {
   background-color: var(--secondary-bg);
   backdrop-filter: blur(50%);
 }
-.navbar .logo {
-  color: #fff;
+.navbar .logo img {
+  width: 200px;
+  height: 50px;
   cursor: pointer;
 }
 
-.navbar .logo span {
-  color: var(--main-color);
-}
 
 .navbar .links {
   display: flex;
@@ -57,7 +55,7 @@ a {
 }
 
 .navbar .links a:hover {
-  color: var(--main-color);
+  color: #7ac7ff;
 }
 
 .navbar button {
