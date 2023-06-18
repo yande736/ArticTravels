@@ -24,6 +24,10 @@ a {
   --secondary-bg: #0affff;
 }
 
+header a {
+  color: #fff;
+}
+
 .navbar {
   position: fixed;
   top: 0;
@@ -33,7 +37,7 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: var(--secondary-bg);
+  background: #172940;
   backdrop-filter: blur(50%);
 }
 .navbar .logo img {
@@ -43,18 +47,18 @@ a {
 }
 
 
-.navbar .links {
+.navbar .nav-links {
   display: flex;
   align-items: center;
   font-size: 1.2rem;
 }
 
-.navbar .links a {
+.navbar .nav-links a {
   margin-left: 1rem;
   color: #fff;
 }
 
-.navbar .links a:hover {
+.navbar .nav-links a:hover {
   color: #7ac7ff;
 }
 
@@ -360,7 +364,7 @@ a {
   overflow: hidden;
   cursor: pointer;
   transition: all .5s;
-  background: rgba(33, 100, 100, 0.35);
+  background: #172940;
   border: 1px solid var(--bg-color);
   border-radius: 5px;
   display: flex;
@@ -386,13 +390,220 @@ a {
 .kartu span:hover img {
   transform: rotate(0);
 }
+
+
+/* subcribe section */
+.subcribe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 4rem;
+  align-items: center;
+}
+
+.subcribe p {
+  font-size: 1rem;
+  margin-bottom: .5rem;
+  font-style: italic;
+  letter-spacing: 1px;
+}
+
+.subcribe button {
+  margin-bottom: 1rem;
+}
+
+/* contact section */
+.contact .contact-content .text {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.contact .contact-content .left p {
+  text-align: justify;
+}
+.contact .contact-content .left .icons {
+  margin: 10px 0;
+}
+.contact .contact-content .row {
+  display: flex;
+  height: 65px;
+  align-items: center;
+}
+.contact .contact-content .row .info {
+  margin-left: 30px;
+}
+.contact .contact-content .row i {
+  font-size: 25px;
+  color: crimson;
+}
+.contact .contact-content .info .head {
+  font-weight: 500;
+}
+.contact .contact-content .info .sub-title {
+  color: #000;
+}
+.contact .right form .fields {
+  display: flex;
+  flex-direction: row;
+}
+.contact .right form .field,
+.contact .right form .fields .field {
+  height: 45px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.contact .right form .textarea {
+  height: 80px;
+  width: 100%;
+}
+.contact .right form .name {
+  margin-right: 10px;
+}
+.contact .right form .field input,
+.contact .right form .textarea textarea {
+  height: 100%;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 6px;
+  outline: none;
+  padding: 0 15px;
+  font-size: 17px;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease;
+}
+.contact .right form .field input:focus,
+.contact .right form .textarea textarea:focus {
+  border-color: #b3b3b3;
+}
+.contact .right form .textarea textarea {
+  padding-top: 10px;
+  resize: none;
+}
+.contact .right form .button-area {
+  display: flex;
+  align-items: center;
+}
+.right form .button-area button {
+  color: #fff;
+  display: block;
+  width: 160px !important;
+  height: 45px;
+  outline: none;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  flex-wrap: nowrap;
+  background: crimson;
+  border: 2px solid crimson;
+  transition: all 0.3s ease;
+}
+.right form .button-area button:hover {
+  color: crimson;
+  background: none;
+}
   
-/* footer */
+/* footer section styling */
+.footer {
+  position: relative;
+  left: 0;
+  bottom: 0px;
+  width: 100%;
+  height: 100vh;
+  background: #172940;
+  padding-top: 100px;
+  color: #f7f7f7;
+  margin-top: 4rem;
+}
 
+.footer .links a,
+.footer .legal a {
+    cursor: pointer;
+    color: #fff;
+}
 
+footer {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  margin: 0 30px;
+}
 
+footer > img {
+  width: 150px;
+  height: 50px;
+  margin-top: 10px;
+  cursor: pointer;
+}
 
-@media screen and (max-width: 695px) {
+footer {
+  color: #a2b5cd;
+}
+
+footer.top {
+  border-bottom: 2px solid #3a4f6a;
+  padding-bottom: 20px;
+}
+
+footer.bottom {
+  padding: 20px 0;
+  justify-content: space-between;
+}
+
+footer.top .links {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.links > div {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+footer h2 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  color: #f7f7f7;
+}
+
+.legal {
+  font-size: 12px;
+}
+
+.legal > a {
+  margin: 0 4px;
+}
+
+.legal > span {
+  margin-right: 10px;
+}
+
+footer.bottom .links {
+  display: flex;
+  gap: 18px;
+}
+
+footer.bottom .links > a {
+  font-size: 24px;
+}
+
+/* @media screen and (max-width: 991px) {
+  .max-width {
+    padding: 0 50px;
+  }
+} */
+
+@media screen and (max-width: 947px) {
+  .contact .contact-content .column {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+}
+
+@media screen and (max-width: 690px) {
   .navbar .logo {
     font-size: 0.8rem;
   }
@@ -422,4 +633,51 @@ a {
   .navbar .toggle-btn {
     display: block;
   }
+
+  footer {
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 0;
+  }
+
+  footer.bottom {
+    gap: 16px;
+    flex-direction: column-reverse;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .contact .right form .fields {
+    flex-direction: column;
+  }
+  .contact .right form .name,
+  .contact .right form .email {
+    margin: 0;
+  }
+  .right form .error-box {
+    width: 150px;
+  }
+
+.footer {
+    height: 100%;
+}
+footer {
+    text-align: center;
+    align-items: center;
+}
+
+footer.top .links {
+    grid-template-columns: 1fr;
+}
+
+footer.bottom {
+    align-items: center;
+}
+
+.legal > span {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 2px;
+}
 }
